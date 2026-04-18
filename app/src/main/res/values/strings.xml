@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Projet WS</string>
+    <string-array name="villes">
+        <item>Rabat</item>
+        <item>Casablanca</item>
+        <item>Marrakech</item>
+        <item>Agadir</item>
+        <item>Tanger</item>
+    </string-array>
+</resources>

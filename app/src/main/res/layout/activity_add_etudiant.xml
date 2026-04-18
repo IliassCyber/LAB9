@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddEtudiant">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nom :"
+        style="@style/label_style" />
+
+    <EditText
+        android:id="@+id/et_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/field_style"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prénom :"
+        style="@style/label_style" />
+
+    <EditText
+        android:id="@+id/et_first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/field_style"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ville :"
+        style="@style/label_style" />
+
+    <Spinner
+        android:id="@+id/sp_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/villes"
+        style="@style/field_style" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sexe :"
+        style="@style/label_style" />
+
+    <RadioGroup
+        android:id="@+id/rg_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp">
+
+        <RadioButton
+            android:id="@+id/rb_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Homme" />
+
+        <RadioButton
+            android:id="@+id/rb_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Femme" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter l'étudiant" />
+</LinearLayout>
